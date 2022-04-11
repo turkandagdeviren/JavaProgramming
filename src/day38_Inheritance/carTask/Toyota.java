@@ -3,8 +3,8 @@ package day38_Inheritance.carTask;
 public class Toyota extends Car {
 
 
-    public Toyota(String model, String color, int price, int miles) {
-        super("Toyota", model, color, price, miles);
+    public Toyota(String model, int year, int price, String color, int miles) {
+        super("Toyota", model, year, price, color, miles);
     }
 
     public void reliable(){
