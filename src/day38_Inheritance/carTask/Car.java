@@ -2,14 +2,15 @@ package day38_Inheritance.carTask;
 
 public class Car {
     public String brand, model, color;
-    public int price;
+    public int price, year;
     public int miles;
 
-    public Car(String brand, String model, String color, int price, int miles) {
+    public Car(String brand, String model, int year, int price, String color, int miles) {
         this.brand = brand;
         this.model = model;
-        this.color = color;
+        this.year= year;
         this.price = price;
+        this.color = color;
         this.miles = miles;
     }
 
@@ -26,10 +27,10 @@ public class Car {
                 ", model='" + model + '\'' +
                 ", color='" + color + '\'' +
                 ", price=" + price +
+                ", year=" + year +
                 ", miles=" + miles +
                 '}';
     }
-
 }
 
 
