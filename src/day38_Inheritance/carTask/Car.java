@@ -3,9 +3,9 @@ package day38_Inheritance.carTask;
 public class Car {
     public String brand, model, color;
     public int price;
-    public double miles;
+    public int miles;
 
-    public Car(String brand, String model, String color, int price, double miles) {
+    public Car(String brand, String model, String color, int price, int miles) {
         this.brand = brand;
         this.model = model;
         this.color = color;
@@ -29,6 +29,7 @@ public class Car {
                 ", miles=" + miles +
                 '}';
     }
+
 }
 
 
