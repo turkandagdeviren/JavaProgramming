@@ -1,5 +1,7 @@
 package day38_Inheritance.carTask;
 
+import java.lang.Object;
+
 public class Tesla extends Car {
 
 
@@ -11,4 +13,8 @@ public class Tesla extends Car {
         System.out.println(brand+" "+model+ " in autopilot mode");
     }
 
+    @Override
+    public void start() {
+        System.out.println("Say \"start\" to start "+brand+ " "+ model);
+    }
 }
