@@ -1,5 +1,6 @@
 package day38_Inheritance.carTask;
 
+<<<<<<< HEAD
 public class BMW extends Car{
 
 
@@ -19,10 +20,7 @@ public class BMW extends Car{
     public void start() {
         System.out.println("Call mechanic to jump start "+ brand +" "+model);
     }
+=======
+public class BMW {
+>>>>>>> parent of d8477e6 (day38: Inheritance - Method Overriding)
 }
-/*
-2. BMW:
-					extra methods:
-						breaksDown()
-						racing()
- */

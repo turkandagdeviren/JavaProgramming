@@ -1,5 +1,6 @@
 package day38_Inheritance.carTask;
 
+<<<<<<< HEAD
 import java.lang.Object;
 
 public class Tesla extends Car {
@@ -12,6 +13,9 @@ public class Tesla extends Car {
     public void autoPilot(){
         System.out.println(brand+" "+model+ " in autopilot mode");
     }
+=======
+public class Tesla {
+>>>>>>> parent of d8477e6 (day38: Inheritance - Method Overriding)
 
     @Override
     public void start() {
