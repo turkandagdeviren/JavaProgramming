@@ -30,8 +30,8 @@ public class Rectangle extends Shape {
         if (width <= 0) {
             System.err.println("Invalid width: " + width);
             System.exit(1);
-            this.width = width;
         }
+        this.width = width;
 
     }
 

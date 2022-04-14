@@ -17,8 +17,23 @@ public class ShapeObjects {
         Rectangle rectangle = new Rectangle(5, 6);
 
         System.out.println(rectangle);
+        rectangle.setLength(10);
+        System.out.println(rectangle.getLength() );
+        System.out.println(rectangle);
 
+        System.out.println(rectangle.perimeter());
 
+        //System.out.println(rectangle.name);-> name private variable oldugu icin boyle dogrudan cagiramam
+        System.out.println(rectangle.getName());
+
+        System.out.println("-------------------------------------------------");
+
+        Circle circle = new Circle(7.5);
+        System.out.println(circle);
+
+        circle.setRadius(15.5);
+        System.out.println(circle.getRadius());
+        System.out.println(circle.getName());
 
 
     }
