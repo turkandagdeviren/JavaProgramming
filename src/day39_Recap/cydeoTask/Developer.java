@@ -12,7 +12,7 @@ public class Developer extends Employee {
 
     @Override
     public void work() {
-        System.out.println(getJobTitle()+ getName()+" is developing the application");
+        System.out.println(getJobTitle()+ " " +getName()+" is developing the application");
     }
 }
 /*
