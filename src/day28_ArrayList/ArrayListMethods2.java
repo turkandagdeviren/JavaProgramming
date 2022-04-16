@@ -16,7 +16,7 @@ public class ArrayListMethods2 {
         list.add(500);
         System.out.println(list);
         /*int num=1;
-        list.remove(num); // 1.indexe gidip onu remove eder cunku int*/
+        list.remove(num); // 1.indexe gidip onu remove eder cunku int  */
 
         Integer num = 200;
         list.remove(num); // bu durumda 200 u siler. objecti siler cunku Integer
