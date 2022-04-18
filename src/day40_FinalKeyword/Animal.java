@@ -54,5 +54,16 @@ public class Animal {
     }
 
 
+public void eat(){ // this implementation can be changed by overriding
+    System.out.println(name+ " is eating");
+}
+
+public final void drink(){ // this implementation will be same for all the animals
+    System.out.println(name + " is drinking water");
+}
+
+
+
+
 
 }
