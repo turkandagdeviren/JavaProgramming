@@ -40,7 +40,11 @@ public class FinalVariable {
 
         // FinalVariable.name="Python";  // final variable can not be reassigned
 
-
+/*
+final variables: can not be reassigned
+final methods: can not be overridden
+final classes: can not be inherited ( can not ve parent)
+ */
 
     }
 }
