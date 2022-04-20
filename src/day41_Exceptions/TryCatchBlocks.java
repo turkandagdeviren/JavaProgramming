@@ -1,6 +1,7 @@
 package day41_Exceptions;
 
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 
 public class TryCatchBlocks {
 
@@ -60,7 +61,7 @@ public class TryCatchBlocks {
 
         } catch(RuntimeException e){ //parent exception can handle the child exceptions
                                      // the object of the exception will be assigned to this "e" variable
-           e.printStackTrace();
+           // e.printStackTrace();
         }
 
         System.out.println("test3 completed");
@@ -79,9 +80,11 @@ public class TryCatchBlocks {
 
         System.out.println("----------------------------------");
 
-        FileInputStream file= new FileInputStream("File path");
-
-
+        try {
+            FileInputStream file= new FileInputStream("File path");
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
 
 
     }
