@@ -1,5 +1,7 @@
 package day41_Exceptions;
 
+import java.io.FileInputStream;
+
 public class TryCatchBlocks {
 
     public static void main(String[] args) {
@@ -53,17 +55,32 @@ public class TryCatchBlocks {
         System.out.println("test3 is started");
 
 
-        try {
+       try {
             System.out.println("Cydeo".substring(2, 0));
 
         } catch(RuntimeException e){ //parent exception can handle the child exceptions
                                      // the object of the exception will be assigned to this "e" variable
-            e.printStackTrace();
+           e.printStackTrace();
         }
 
         System.out.println("test3 completed");
 
         System.out.println("----------------------------------");
+
+        System.out.println("Hello");
+        try{
+            Thread.sleep(3000);
+        }catch(InterruptedException e){
+            e.printStackTrace();
+        }
+
+        System.out.println("Cydeo");
+
+
+        System.out.println("----------------------------------");
+
+        FileInputStream file= new FileInputStream("File path");
+
 
 
 
