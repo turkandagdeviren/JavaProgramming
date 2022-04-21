@@ -12,19 +12,20 @@ public class DisadvantageOfThrowsKeyword2 {
     public static void method(){ //utility class olustururken olusan exceptionlari handle etmek icin en dogru yontem try& catch kullanmaktir
         try {
             method1();
-        } catch (FileNotFoundException e) {
+        } catch (InterruptedException e) {
             e.printStackTrace();
         }
     }
 
 
 
-    public static void method1() throws FileNotFoundException {
+    public static void method1() throws InterruptedException {
 
-        new FileInputStream("");
+      //  new FileInputStream("");
+        Thread.sleep(3000);
 
     }
-    public static void method2() throws FileNotFoundException {
+    public static void method2() throws InterruptedException {
       method1();  //burada exception yine ortaya cikar. method 2 yi de throws edelim method3te de yine exception olur
     }
 
