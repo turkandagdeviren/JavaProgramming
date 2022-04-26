@@ -7,7 +7,24 @@ import java.io.FileNotFoundException;
 /*throws kullandigimiz method bir baska method icinde cagrildiginda, throws sorunu cozmedigi icin, exception hala orada oldugu icin
 metodu cagirinca yine exception ortaya cikar.throws un tek dezavantaji budur*/
 
+// diyelim ki main method icinde hem checked hem unchecked exception var. unchecked olani tek yol olan try&catch ile handle ederiz,
+// checked olani ise eger metodu baska bir yerde cagirmayacagimizdan eminsek throws ile handle edebiliriz
+
 public class DisadvantageOfThrowsKeyword2 {
+
+
+    public static void main(String[] args) throws InterruptedException, FileNotFoundException {
+        method1();
+        method2();
+        method3();
+
+        String str= null;
+        try {
+            System.out.println(str.charAt(0)); //unchecked exception
+        }catch(RuntimeException e){
+            e.printStackTrace();
+        }
+    }
 
     public static void method(){ //utility class olustururken olusan exceptionlari handle etmek icin en dogru yontem try& catch kullanmaktir
         try {
