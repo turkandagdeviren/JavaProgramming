@@ -4,7 +4,7 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class ThrowKeyword {
-    // it creates exception, it doesnt handle exception. it is used for manually creating exception
+    // it creates exception, it doesn't handle exception. it is used for manually creating exception
     // for ex to terminate program
 
     public static void main(String[] args) {
