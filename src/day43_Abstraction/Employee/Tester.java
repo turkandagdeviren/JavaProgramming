@@ -1,0 +1,26 @@
+package day43_Abstraction.Employee;
+
+public final class Tester extends Employee { // hem person hem employee nin abstract methodlarini almak ve implement yapmak zorunda cunku employee persona inherit ve ikisi de abstract
+
+
+    public Tester(String name, int age, char gender, int id, String jobTitle, double salary) {
+        super(name, age, gender, id, jobTitle, salary);
+    }
+
+    @Override
+    public void work() {
+        System.out.println(getName()+ " is testing the application");
+    }
+
+    @Override
+    public void sleep() {
+        System.out.println(getName()+ " sleeps 8 hours");
+    }
+
+    public void bugReport(){
+        System.out.println(getName()+ " is creating bug reports");
+    }
+
+
+
+}

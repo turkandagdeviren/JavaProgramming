@@ -1,4 +1,4 @@
-package day43_Abstraction.car;
+package day43_Abstraction.Car;
 
 public final class Audi extends Car { // bu class in metodlari baskasi tarafindan inherit edilmesin diye final class yaptik
 

@@ -1,4 +1,4 @@
-package day43_Abstraction.car;
+package day43_Abstraction.Car;
 
 public class CarShop {
     public static void main(String[] args) {
