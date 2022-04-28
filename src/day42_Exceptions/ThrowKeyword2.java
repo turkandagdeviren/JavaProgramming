@@ -8,7 +8,7 @@ public class ThrowKeyword2 {
 
         throw new NoSuchElementException("There is no such element as break");
 
-      //  throw new Rectangle(5,7);  it gives compile error because it is not exception object
+        //throw new Rectangle(5,7); // it gives compile error because it is not exception object
 
       //  System.out.println("hello world"); -> once we use the throw keyword compiler knows there is an exception (line 11) we can not write new fragment codes
 
